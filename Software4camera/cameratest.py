@@ -3,7 +3,7 @@ import time
 import os
 from datetime import datetime
 
-def capture_every_n_seconds(n, base_folder="/ABBecadlo/Software4camera/Pics"):
+def capture_every_n_seconds(n, base_folder="Software4camera/Pics"):
 
     cap = cv2.VideoCapture(2)
     if not cap.isOpened():

@@ -23,9 +23,12 @@ def newest(path):
     paths = [os.path.join(path, basename) for basename in files]
     return max(paths, key=os.path.getctime)
 
+
 def getAngle(a,b,c):
     ang = math.degrees(math.atan2(c[1]-b[1], c[0]-b[0]) - math.atan2(a[1]-b[1], a[0]-b[0]))
     return ang + 360 if ang < 0 else ang
+
+
 def computeAngle(path):
     zdjecie = Image.open(newest(path))
     print(time.time)
@@ -54,9 +57,9 @@ def computeAngle(path):
 
     print(getAngle(PUNKT3, (x, y), SRODEK))
 
-def capture_every_n_seconds(n, base_folder="/ABBecadlo/Software4camera/Pics"):
+def capture_every_n_seconds(n, base_folder="Software4camera/Pics"):
 
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(2)
     if not cap.isOpened():
         print("Cannot open camera")
         return
@@ -77,6 +80,7 @@ def capture_every_n_seconds(n, base_folder="/ABBecadlo/Software4camera/Pics"):
             cv2.imwrite(filepath, frame, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
             computeAngle(folder_path)
             print(f"Saved {filepath}")
+            time.sleep(n)
 
     finally:
         cap.release()
