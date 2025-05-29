@@ -17,3 +17,10 @@ Max 15 min. nasza prezentacja\
 
 Podzielić się slajdami\
 Logo Funduszu\
+
+
+# Absorber
+https://www.nature.com/articles/s41598-018-23286-6
+
+# Antena wg
+Uda-Yagi
