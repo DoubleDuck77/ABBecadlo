@@ -9,14 +9,14 @@ co użyliśmy\
 grupy badawcze\
 eksperymenty\
 rezultaty\
-co dalej!?\
+co dalej!?
 
 3-5 min. wstęp Szymona\
 Max 15 min. nasza prezentacja\
-5 min. pytania\
+5 min. pytania
 
 Podzielić się slajdami\
-Logo Funduszu\
+Logo Funduszu
 
 
 # Absorber
